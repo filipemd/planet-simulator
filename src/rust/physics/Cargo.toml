@@ -1,0 +1,10 @@
+[package]
+name = "physics"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[lib]
+name = "physics"
+crate-type = ["staticlib"]
