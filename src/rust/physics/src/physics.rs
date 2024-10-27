@@ -53,12 +53,6 @@ fn attraction(planet: &Planet, other: &Planet) -> RVec2 {
     let distance_y = other.pos.y - planet.pos.y;
     
     let distance_squared = distance_x * distance_x + distance_y * distance_y;
-    if distance_squared == 0.0 {
-        return RVec2 {
-            x: 0.0,
-            y: 0.0,
-        }
-    }
     let distance = distance_squared.sqrt();
     
     let force = G * ((planet.mass * other.mass) / distance_squared); // A equação da Lei da Gravitação Universal.
