@@ -17,6 +17,6 @@ bool close_window;
 #define AU (149.6e6 * 1000)      // 1 AU em metros
 #define SCALE (250 / AU)       // Escala em pixels por AU
 
-#define TIMESTEP 3600*24
+#define TIMESTEP 3600*12
 
 #endif

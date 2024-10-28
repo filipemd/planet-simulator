@@ -1,10 +1,10 @@
-#include <raylib.h>
-
 #include "main.h"
+#include "main_loop.h"
+
 #include "stars.h"
 
-static int x[STAR_AMOUNT];
-static int y[STAR_AMOUNT];
+static unsigned x[STAR_AMOUNT];
+static unsigned y[STAR_AMOUNT];
 
 void create_stars(void) {
     for(unsigned i=0; i < STAR_AMOUNT; i++) {

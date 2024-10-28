@@ -23,6 +23,7 @@ typedef struct Planet {
 extern Planet create_planet(double x, double y, unsigned int radius, Color color, double mass); // Função do Rust.
 extern void update_planet(Planet *planet, const Planet *planets_raw, size_t planets_len, double timestep); // Outra função do Rust.
 
+void set_scale(double scale);
 void draw_planet(Planet* planet);
 
 #endif

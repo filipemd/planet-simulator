@@ -6,9 +6,11 @@ int main(void) {
     sheight = SCREEN_HEIGHT;
 
     InitWindow(swidth, sheight, "Planet Simulator");
+
+    // Não existe som no espaço
     //InitAudioDevice();
 
-    SetTargetFPS(30);
+    SetTargetFPS(60);
     //SetExitKey(KEY_NULL);
 
     start();
