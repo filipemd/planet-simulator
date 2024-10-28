@@ -25,7 +25,7 @@ void newton_cannon_init(void) {
 }
 
 void newton_cannon_loop(void) {
-    char key = GetCharPressed();
+    const char key = GetCharPressed();
     if (key) {
         cannonball.pos.x = 0;
         cannonball.pos.y = -EARTH_RADIUS*1.3;

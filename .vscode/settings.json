@@ -3,6 +3,7 @@
         "solar_system.h": "c",
         "planet.h": "c",
         "three_body.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "newton_cannon.h": "c"
     }
 }

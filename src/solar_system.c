@@ -20,6 +20,8 @@ void solar_system_init(void) {
     planets[0] = sun;
     planets[1] = mercury;
     planets[2] = earth;
+
+    set_scale(SCALE);
 }
 
 void solar_system_loop(void) {
@@ -30,4 +32,10 @@ void solar_system_loop(void) {
 void solar_system_draw(void) {
     for (uint8_t i = 0; i < PLANET_AMOUNT; i++)
         draw_planet(&planets[i]);
+
+    DrawText(
+        "Apenas Terra e Mercúrio.\n\n"
+        "Como exercício você pode adicionar\n\n"
+        "os outros planetas."
+    , 0, 0, 32, WHITE);
 }
