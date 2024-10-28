@@ -4,26 +4,7 @@
 */
 pub mod physics;
 
-use std::os::raw::*;
-
 use crate::physics::*;
-
-#[no_mangle]
-pub extern "C" fn create_planet(x: f64, y: f64, radius: c_uint, color: Color, mass: f64) -> Planet {
-    Planet {
-        pos: RVec2 {
-            x,
-            y,
-        },
-        radius,
-        color,
-        mass,
-        vel: RVec2 {
-            x: 0.0,
-            y: 0.0
-        },
-    }
-}
 
 #[no_mangle]
 pub extern "C" fn update_planet(planet: &mut Planet, planets_raw: *const Planet, planets_len: usize, timestep: f64) {

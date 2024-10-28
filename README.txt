@@ -1,6 +1,6 @@
 Este é um simples simulador de planetas escrito em C e Rust usando a biblioteca Raylib.
 
-Criei porque queria aprender principalmente como usar funções Rust em C e como exportar para WebAssembly (ainda não feito).
+Criei porque queria aprender principalmente como usar funções Rust em C e como exportar para WebAssembly.
 
 Ele não tem quase nada, então fique livre para fazer modificações como:
 
